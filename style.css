@@ -1,0 +1,218 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #062831;
+    
+}
+body {
+	background: linear-gradient(-45deg, #cd4db5, #ef995b, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero >h1 {
+    font-size: 3em;
+    /* mix-blend-mode: difference; */
+color: rgb(77, 120, 169);
+position: absolute;
+width: 100%;
+height: 100%;
+margin: 0;
+line-height: 50px;
+text-align: center;
+/* Starting position */
+-moz-transform:translateX(100%);
+-webkit-transform:translateX(100%);	
+transform:translateX(100%);
+/* Apply animation to this element */	
+-moz-animation: example1 15s linear infinite;
+-webkit-animation: example1 15s linear infinite;
+animation: example1 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes example1 {
+0%   { -moz-transform: translateX(100%); }
+100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes example1 {
+0%   { -webkit-transform: translateX(100%); }
+100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes example1 {
+0%   { 
+-moz-transform: translateX(100%); /* Firefox bug fix */
+-webkit-transform: translateX(100%); /* Firefox bug fix */
+transform: translateX(100%); 		
+}
+100% { 
+-moz-transform: translateX(-100%); /* Firefox bug fix */
+-webkit-transform: translateX(-100%); /* Firefox bug fix */
+transform: translateX(-100%); 
+}
+}
+.main{
+    height: 80vh;
+    width: 22vw;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    border: #000 solid 1px;
+    background-color: #fff;
+    
+}
+.d1{
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    /* color: #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    border-bottom: rgb(232, 226, 226)  solid 1px;
+}
+.ri-camera-line{
+    font-size: 25px;
+    position: relative;
+    right: 20px;
+}
+.ri-send-plane-fill{
+    font-size: 25px;
+    position: relative;
+    left: 20px;
+}
+.d1 img{
+   height: 5vh;
+   position: relative;
+   top: 2px;
+
+}
+.d2{
+    /* background-color: rgb(217, 124, 9); */
+    height: 7vh; 
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.circle{
+    position: relative;
+    border-radius: 50%;
+    border: #3c3b3b 1px solid;
+    right: -2px;
+    height: 25px;
+    width: 2vw;
+    font-size: 15px;
+    top: 1px;
+    padding: 4px;
+    background-color: #000;
+    color: #fff;
+}
+h1{
+    position: relative;
+    right: -6px;
+    font-size: 16px;
+}
+.dot{
+    position: relative;
+    left:145px;
+    font-size: 15px;
+    bottom: 7px;
+}
+.btn{
+    position: relative;
+    left: 75px;
+    height: 20px;
+    width: 55px;
+    border:none;
+    border-radius: 10%;
+    background-color: #d1d0d0;
+
+}
+
+.d3{
+    /* background-color: rgb(36, 238, 211); */
+    height: 53vh;
+   display: flex;
+   align-items: center;
+}
+.d3 img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+
+}
+.d4{
+    /* background-color: rgb(109, 7, 60); */
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    font-size: 25px;
+    align-items: center;
+}
+.ri-heart-line{
+    position: relative;
+    right:-1px;
+}
+.ri-chat-3-line{
+    position: relative;
+    right: -6px;
+}
+.ri-send-plane-line{
+    position: relative;
+    right: -12px;
+}
+.ri-bookmark-line{
+    position: relative;
+    left: 170px;
+}
+
+.d5{
+    /* background-color: rgb(134, 27, 125); */
+    height: 9vh;
+    font-size: 10px;
+    font-weight: 550;
+    padding: 1px 4px;
+    border-bottom: #e9e6e6 solid 1px;
+  
+}
+.d5>span{
+    font-size: 12px;
+    font-weight: 800;
+    font-family: poppins;
+}
+.d6{
+    /* background-color: rgb(85, 132, 116); */
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 26px;
+}
